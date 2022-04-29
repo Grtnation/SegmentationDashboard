@@ -1,0 +1,176 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+h1 {
+  color: black;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: black; 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem; 
+  }
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: black;
+    
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.container {
+    width: 60%;
+    margin: 2rem auto; 
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem; 
+  }
+  .row {
+    display: absolute;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 5px;
+  }
+  .column-1 {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 5px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: left;
+    width: 100%;
+    
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  *{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: rgb(102, 102, 102);
+}
+
+.wrapper .sidebar{
+    background: rgb(5, 68, 104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+.right_content{
+  width:85%;
+  position:absolute;
+  top: 0;
+  right: 0; 
+  }
+.left_menu {
+  width: 15%;
+  position: fixed;
+  left: 0px;
+  height: 100vh;
+  z-index: 999;
+  background:white;
+  font-size: 62.5%;
+  }
+     
+.parent {
+  display: flex;
+  flex-direction: row;
+}
+.spacer {
+  flex-grow: 1;
+}
+  
+.plot{
+    display: flex;
+    width: 50%
+}
+  
+@media screen and (max-width: 1200px) {
+  .parent{
+    flex-direction: column;
+  }
+  .plot{
+    width: 100%
+  }
+}
+.pie {
+  margin-right: auto;
+  right: 0;
+}
+.div {
+  color: white;
+}
